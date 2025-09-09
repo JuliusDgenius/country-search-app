@@ -4,11 +4,9 @@ const displayInfo = document.getElementById("displayInfo");
 const loader = document.getElementById("loader");
 const error = document.getElementById("error");
 
-const countryName = inputElem.value.trim();
-
-const API_URL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
-
 btn.addEventListener("click", async (e) => {
+    const countryName = inputElem.value.trim();
+    const API_URL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
     e.preventDefault();
 
     try {
@@ -41,5 +39,6 @@ btn.addEventListener("click", async (e) => {
       error.innerHTML = `${err.message}`;
     } finally {
         loader.classList.add("loader");
+	document.getElementById("country-form").reset();
     }
 });
