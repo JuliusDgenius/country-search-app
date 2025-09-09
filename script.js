@@ -8,6 +8,7 @@ btn.addEventListener("click", async (e) => {
     const countryName = inputElem.value.trim();
     const API_URL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
     e.preventDefault();
+    error.innerHTML = "";
 
     try {
       loader.classList.remove("loader");
