@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Country App</title>
+</head>
+<body>
+    <section class="section">
+        <header>
+            <h1>Country App</h1>
+            <h2>Find all the information you need about any country in the world</h2>
+            <span>Just enter the country name to find information you need in one place</span>
+        </header>
+    </section>
+    
+    <section class="section">
+        <div class="form-group">
+            <form action="" id="country-form" class="country-form">
+                <label for="country name">Country:</label>
+                <input id="country" type="text" placeholder="Enter country name (e.g Nigeria)">
+                <button type="submit" id="searchInfo" class="btn">Search Country Info</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="loader" class="loader loader-div">Loading...</div>
+    <div id="error" class="error error-div"></div>
+
+    <section class="section">
+        <div id="displayInfo"></div>
+    </section>
+</body>
+</html>
