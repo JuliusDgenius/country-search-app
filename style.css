@@ -25,6 +25,10 @@ h2 {
     margin-bottom: 1rem;
 }
 
+ul li {
+    text-decoration: none;
+}
+
 .btn {
     display: inline-block;
     background: #296deb;
@@ -108,4 +112,13 @@ h2 {
     color: red;
     text-align: center;
     margin: 0 auto;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#timezoneList li {
+    list-style-type: none;
 }
